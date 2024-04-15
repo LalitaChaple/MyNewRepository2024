@@ -1,0 +1,14 @@
+<apex:page controller="userAddData" >
+   <apex:form >
+    <apex:pageBlock title="AllAdds">
+        <apex:pageBlockTable value="{!Adds}" var="Adds">
+          
+            
+          <apex:column value="{!Adds.Add_Name__c}"/>
+            <apex:column value="{!Adds.Add_AssignedDate__c}"/>
+            <apex:column value="{!Adds.AddId__c }"/>
+           
+       </apex:pageBlockTable>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>
